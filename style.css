@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.main-container {
+    padding: 5% 3%;
+    min-width: 375px;
+}
+
+.container {
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#testimonial-1 {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+#quote {
+    position: absolute;
+    right: 8%;
+    top: 0%;
+    z-index: 1;
+}
+
+#testimonial-1 .personal-info,
+#testimonial-1 h2 {
+    z-index: 2;
+    position: relative;
+}
+
+#testimonial-1 .personal-info img {
+    border: 2px solid hsl(263, 77%, 65%);
+}
+
+#testimonial-2 {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+#testimonial-3, #testimonial-5 {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 8px 8px 34px -22px #000000;
+    color: hsl(217, 19%, 35%);
+}
+
+#testimonial-4 {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+#testimonial-4 img {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.personal-info img {
+    margin-right: 15px;
+    border-radius: 50%;
+    width: 40px
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.graduation {
+    opacity: 50%;
+}
+
+.main-testimonial{
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.extended-testimonial {
+    opacity: 70%;
+    line-height: 20px;
+}
+
+@media (min-width: 800px) {
+    .main-container,
+    #main-left,
+    #top,
+    #bottom {
+        display: flex;
+    }
+    .main-container {
+        max-width: 1440px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #testimonial-5 {
+        flex-basis: 22%;
+    }
+
+    #main-left {
+        flex-direction: column;
+        flex-basis: 78%;
+    }
+
+    #top, #bottom {
+        flex-basis: 50%;
+    }
+
+    #testimonial-1, #testimonial-4 {
+        flex-basis: 75%;
+    }
+
+    #testimonial-2, #testimonial-3 {
+        flex-basis: 35%;
+    }
+
+    #main-left .container {
+        margin-right: 20px
+    }
+
+    #quote {
+        right: 15%;
+        width: 115px;
+    }
+
+    .main-testimonial {
+        font-size: 2.1rem;
+    }
+
+    .extended-testimonial {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        padding: 35px;
+        padding-right: 40px;
+    }
+
+    .personal-info {
+        margin-bottom: 20px;
+    }
+}
